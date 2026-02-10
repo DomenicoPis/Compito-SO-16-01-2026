@@ -90,7 +90,7 @@ int main() {
         exit(1);
     }
 
-    MonitorProdCons * monitor = (MonitorProdCons *) shmat(id_shm, NULL, 0);
+    MonitorProdCons * monitors = (MonitorProdCons *) shmat(id_shm, NULL, 0);
 
     if(monitor == (void*)-1){
 
